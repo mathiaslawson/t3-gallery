@@ -22,7 +22,7 @@ const images = await db.query.images.findMany({
         {
           images.map((image, key)=>(
             <div key={image.id + "-" + key} className="w-48 flex flex-col">
-              <img src={image.url} />
+              <img src={image.url} alt="alt-image"/>
               <div>{image.name}</div>
 
             </div>
