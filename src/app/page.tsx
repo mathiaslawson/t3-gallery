@@ -22,7 +22,7 @@ function Images(){
       images.map((image, key)=>(
         <div key={image.id + "-" + key} className="w-48 h-48 flex flex-col ">
           <Image src={image.url} alt="alt-image" 
-          style={{objectFit: 'contain'}}
+          style={{objectFit: 'fill'}}
           width={192}
           height={192}
           />
