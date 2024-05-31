@@ -21,20 +21,19 @@ function Images(){
     {
       images.map((image, key)=>(
         <div key={image.id + "-" + key} className="w-48 h-48 flex flex-col ">
+          <Link href={`/img/${image.id}`}>
           <Image src={image.url} alt="alt-image" 
           style={{objectFit: 'fill'}}
           width={192}
-          height={192}
-          />
-          <div>{image.name}</div>
-
+          height={192} />
+          </Link>
+          <div>{image.name}</div>     
         </div>
       ))
     }
   </div>
   )
 }
-
 
 
   return (
